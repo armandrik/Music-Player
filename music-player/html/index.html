@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="meta-container">
+        <div class="image-container">
+            <img src="../image/ab67706f0000000361f620679a5628ead36926f0.jpg" alt="expreince" title="expreince">
+        </div>
+        <div class="icon-container">
+            <i class="fa fa-heart" title="Favorit"></i>
+            <i class="fa fa-volume-up" title="volum up"></i>
+            <i class="fa fa-volume-down" title="volum down"></i>
+            <i class="fa fa-refresh" title="play back"></i>
+        </div>
+        <audio src="../Audio/01_experience.mp3" id="mymusic"></audio>
+        <div class="music-list">
+            <h3>Song : Experience</h3>
+            <h4>Artist : Ludovico Einaudi</h4>
+        </div>
+        <div class="progress-wrapper">
+            <span id="timevalue">0:00</span>
+            <input type="range" id="progress" step="1" value="0" min="0" max="312">
+            <span id="musicduration">5:11</span>
+        </div>
+        <div class="btn-container">
+            <button title="backward" id="backward"><i class="fa fa-backward"></i></button>
+            <button title="play" id="play"><i class="fa fa-play" onclick="showPause(this)"></i></button>
+            <button title="forward" id="forward"><i class="fa fa-forward"></i></button>
+        </div>
+    </div>
+</body>
+<script src="../js/main.js"></script>
+
+</html>
