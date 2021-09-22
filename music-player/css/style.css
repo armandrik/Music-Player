@@ -9,8 +9,6 @@ body {
     justify-content: center;
     /* background-color: #a9c5c4; */
     background: linear-gradient(90deg, #2e49e4, #b1b1b1, #d62121);
-    /* background-size: 200% 200%;
-    animation: gradient 10s ease infinite; */
 }
 
 @keyframes mymove {
@@ -52,7 +50,7 @@ body {
     width: 170px;
     height: 170px;
     border-radius: 50%;
-    background-color: #D4DAD9;
+    background: linear-gradient(90deg, #2e49e4, #b1b1b1, #d62121);
     cursor: pointer;
     box-shadow: 4px 4px 10px #5a5a5a, -4px -4px 10px #ffffff;
     transition: .5s;
@@ -63,10 +61,12 @@ img {
     max-width: 168px;
     background-size: cover;
     padding: 3px 3px;
+    transition: .5s;
 }
 
 img:hover {
     animation: mymove 10s infinite;
+    box-shadow: -5px -5px 40px #2e49e4, 5px 5px 40px #d62121;
 }
 
 .icon-container {
@@ -96,11 +96,11 @@ img:hover {
     padding: 5px 0 0 7px;
 }
 
-.fa-volume-down:hover,
-.fa-heart:hover,
 .fa-refresh:hover,
-.fa-volume-up:hover {
-    box-shadow: 0px 0px 11px #7de6c6;
+.fa-volume-up:hover,
+.fa-heart:hover,
+.fa-volume-down:hover {
+    box-shadow: -1px -1px 5px #2e49e4, 1px 1px 5px #d62121;
 }
 
 .fa-volume-down {
@@ -116,7 +116,7 @@ img:hover {
 
 .fa-volume-up:active,
 .fa-volume-down:active {
-    color: #13f8ed;
+    color: #d62121;
 }
 
 .active-heart {
@@ -124,7 +124,7 @@ img:hover {
 }
 
 .active-refresh {
-    color: #5feb4d;
+    color: #2e49e4;
 }
 
 .music-list {
@@ -275,7 +275,7 @@ button {
 }
 
 button:hover {
-    box-shadow: 0px 0px 5px #7de6c6;
+    box-shadow: -1px -1px 5px #2e49e4, 1px 1px 5px #d62121;
 }
 
 button:active {
@@ -294,7 +294,7 @@ button:active {
 .fa-play:hover,
 .fa-pause:hover,
 .fa-forward:hover {
-    color: #7de6c6;
+    color: rgb(121, 79, 199)
 }
 
 .fa-backward {
